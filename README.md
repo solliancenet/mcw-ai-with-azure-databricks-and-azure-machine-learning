@@ -1,4 +1,4 @@
-# Deep Learning with Databricks and Azure Machine Learning*
+# AI with Databricks and Azure Machine Learning
 
 Trey Research Inc. delivers innovative solutions for manufacturers. They specialize in identifying and solving problems for manufacturers that can run the range from automating away mundane but time-intensive processes to delivering cutting edge approaches that provide new opportunities for their manufacturing clients. 
 
@@ -14,6 +14,7 @@ In building this PoC, Trey Research wants to understand how they might use machi
 
 They are also interested to learn what new capabilities Azure provides that might help them to document and explain the models that are created to non-data scientists or might accelerate their time to creating production ready, performant models. 
 
+Finally, they would like to be able to easily create dashboards that summarize the alerts generated so they can observe the solution in operation. 
 
 ## Target audience
 -	Data Engineers
@@ -35,11 +36,11 @@ In this whiteboard design session, you will work in a group to ...
 At the end of this whiteboard design session, you will be better able to [deliver, demonstrate, solve, present, migrate, build, design, architect, construct, modify] ….
 
 #### Outline: Key Concerns for Customer situation ####
-- Use of automated machine learning in AML for model creation of ML based models (not deep learning models)
-- Use of model explainability features (including those of AML and from the community)
+- Use of AML automated machine learning within Azure Databricks for model creation of ML based time series forecasting models (not for deep learning models) and understanding of its capabilities (automated pre-processing, featurization and hyper-parameter tuning)
+- Use of model explainability features 
 - Model lifecycle management from training in Azure Databricks to deployment for use in batch and real-time inferencing scenarios
 - Deep learning model for NLP in text classification
-- RNN for handling time-series data
+- Deep learning model (RNN) for forecasting against time-series data
 - Want to use PyTorch for deep learning
 
 ### Hands-on lab 
@@ -50,12 +51,13 @@ At the end of this hands-on lab, you will be better able to [deliver, demonstrat
 
 #### Outline: Hands-on lab exercises
 - Exercise 0: Before the hands-on lab
-- Exercise 1: Creating a text classifier model using automated machine learning
-- Exercise 2: ML Model explainability
-- Exercise 3: Registering and versioning the model 
-- Exercise 4: Using the model in a batch scoring pipeline
-- Exercise 5: Creating an deep learning model (RNN) for time series data
-- Exercise 6: Using the model for scoring of streaming telemetry
+- Exercise 1: Creating a forecast model using automated machine learning
+- Exercise 2: Understanding the forecast model using Model explainability and registering the model
+- Exercise 3: Creating a deep learning model (RNN) for time series data and registering the model
+- Exercise 4: Evaluating the models
+- Exercise 5: Using the selected forecast model for scoring of streaming telemetry
+- Exercise 6: Creating a deep learning text classification model 
+- Exercise 7: Using the text classification model in a batch scoring pipeline
 
 
 ## Azure services and related products
