@@ -6,7 +6,7 @@ Trey Research is looking to provide the next generation experience for connected
 
 In the first scenario, Trey Research recently instituted new regulations defining what parts are compliant or out of compliance. Rather than rely on their technicians to assess compliance, they would like to automatically assess the compliance based on component notes already entered by authorized technicians. Specifically they are looking to leverage Deep Learning technologies with Natural Language Processing techniques to scan through vehicle specification documents to find compliance issues with new regulations. Then each car is evaluated for out compliance components. 
 
-In the second scenario, Trey Research would like to predict the likelihood of battery failure based on the telemetry stream of time series data that the car provides about how the battery performs when the car is started, how it is charging while running and how well it is holding its charge, among other factors. If they detect a battery failure is immenent within the next 30 days, they would like to send an alert.
+In the second scenario, Trey Research would like to predict the likelihood of battery failure based on the telemetry stream of time series data that the car provides about how the battery performs when the car is started, how it is charging while running and how well it is holding its charge, among other factors. If they detect a battery failure is imminent within the next 30 days, they would like to send an alert.
 
 Upon detection of an out of compliance component or a battery at risk of failure, they would like to be able to send an alert directly to the customer inviting them to schedule a service appointment to replace the part. 
 
@@ -44,21 +44,11 @@ At the end of this whiteboard design session, you will be better able to [delive
 - Want to use PyTorch for deep learning
 
 ### Hands-on lab 
-In this hands-on lab, you will ...
-
-At the end of this hands-on lab, you will be better able to [deliver, demonstrate, solve, present, migrate, build, design, architect, construct, modify] ….
-
-
-#### Outline: Hands-on lab exercises
-- Exercise 0: Before the hands-on lab
-- Exercise 1: Creating a forecast model using automated machine learning
-- Exercise 2: Understanding the forecast model using Model explainability and registering the model
-- Exercise 3: Creating a deep learning model (RNN) for time series data and registering the model
-- Exercise 4: Evaluating the models
-- Exercise 5: Using the selected forecast model for scoring of streaming telemetry
-- Exercise 6: Creating a deep learning text classification model 
-- Exercise 7: Using the text classification model in a batch scoring pipeline
-
+In this lab, you will use Azure Databricks in combination with Azure Machine Learning to build, train and deploy the desired models. You will learn:
+  - How to train a forecasting model against time series data without any code by using automated machine learning.
+  - How to create a recurrent neural network (RNN) model using PyTorch in Azure Databricks that can be used to forecast against time-series data.
+  - How to use a trained forecast model to score data in real-time using Spark Structured Streaming within Azure Databricks.
+  - How to train an Natural Language Processing text classification model using Keras.
 
 ## Azure services and related products
 -	Azure Databricks
@@ -68,9 +58,9 @@ At the end of this hands-on lab, you will be better able to [deliver, demonstrat
 -	Azure Machine Learning Automated Machine Learning
 -	Azure Storage
 -	IoT Hub
--	Pytorch
+-	PyTorch
 -	Power BI
 
 ## Related references
-*This should be a list of and links to prereqs, architectural diagrams, supporting docs, or briefing decks related to the material.* 
+*This should be a list of and links to pre-requisites, architectural diagrams, supporting docs, or briefing decks related to the material.* 
 - [MCW](https://github.com/Microsoft/MCW)
