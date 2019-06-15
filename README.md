@@ -26,14 +26,24 @@ Finally, they would like to be able to easily create dashboards that summarize t
 ## Abstract
 
 ### Workshop
-In this workshop, you will ...
+In this workshop design session, you will design and implement a solution that combines Azure Databricks with Azure Machine Learning to build, train and deploy the machine learning and deep learning models. You will learn:
+- Use of automated machine learning and understanding of its capabilities 
+- Use of model explainability features
+- Model lifecycle management from training in Azure Databricks to deployment for use in batch and real-time inferencing scenarios
+- Deep learning models for NLP in text classification and forecasting against time-series data
+- To compare PyTorch and Keras for deep learning
 
-At the end of this workshop, you will be better able to [deliver, demonstrate, solve, present, migrate, build, design, architect, construct, modify] ….
+At the end of this workshop, you will be better able to design and implement solutions leveraging the Azure Machine Learning service and Azure Databricks.
 
 ### Whiteboard design session 
-In this whiteboard design session, you will work in a group to ...
+In this whiteboard design session, you will work with a group to design a solution that combines Azure Databricks with Azure Machine Learning to build, train and deploy the machine learning and deep learning models. You will learn:
+- Use of automated machine learning and understanding of its capabilities 
+- Use of model explainability features
+- Model lifecycle management from training in Azure Databricks to deployment for use in batch and real-time inferencing scenarios
+- Deep learning models for NLP in text classification and forecasting against time-series data
+- To compare PyTorch and Keras for deep learning
 
-At the end of this whiteboard design session, you will be better able to [deliver, demonstrate, solve, present, migrate, build, design, architect, construct, modify] ….
+At the end of this whiteboard design session, you will be better able to design solutions leveraging the Azure Machine Learning service and Azure Databricks.
 
 
 ### Hands-on lab 
@@ -45,7 +55,6 @@ In this lab, you will use Azure Databricks in combination with Azure Machine Lea
 
 ## Azure services and related products
 -	Azure Databricks
--	Azure Data Lake Storage Gen 2
 -	Azure Machine Learning service
 -	Azure Machine Learning Automated Machine Learning
 -	Azure Storage
@@ -54,5 +63,4 @@ In this lab, you will use Azure Databricks in combination with Azure Machine Lea
 -	Power BI
 
 ## Related references
-*This should be a list of and links to pre-requisites, architectural diagrams, supporting docs, or briefing decks related to the material.* 
 - [MCW](https://github.com/Microsoft/MCW)
