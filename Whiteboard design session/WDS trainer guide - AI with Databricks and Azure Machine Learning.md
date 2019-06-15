@@ -598,7 +598,7 @@ Automated machine learning in Azure Machine Learning helps to simplify and exped
 
 Azure Machine Learning provides access to the automated machine learning capabilities via a Python SDK and via visual interface in the Azure Portal. The latter user experience can simplify the setup enough such that a non-data scientist who has an understanding of the fundamentals of training a model can use it to create a model.
 
-1.  Some of our team has worked with Azure Databricks, and they are confused by the overlap with Azure Machine Learning service. How should we be thinking about when to use which? 
+4.  Some of our team has worked with Azure Databricks, and they are confused by the overlap with Azure Machine Learning service. How should we be thinking about when to use which? 
 
 Consider using both. The best way to think about the relationship between Azure Databricks and Azure Machine Learning is that Azure Databricks provides the tools for data engineers and data scientists to author their data and machine learning pipelines as well as the compute that powers these, and Azure Machine Learning provides the platform that formalizes the modeling process by capturing data about training runs, versioning pipelines and models and assisting with the deployment of models as web services.
  
