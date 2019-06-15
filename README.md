@@ -35,13 +35,6 @@ In this whiteboard design session, you will work in a group to ...
 
 At the end of this whiteboard design session, you will be better able to [deliver, demonstrate, solve, present, migrate, build, design, architect, construct, modify] ….
 
-#### Outline: Key Concerns for Customer situation ####
-- Use of AML automated machine learning within Azure Databricks for model creation of ML based time series forecasting models (not for deep learning models) and understanding of its capabilities (automated pre-processing, featurization and hyper-parameter tuning)
-- Use of model explainability features 
-- Model lifecycle management from training in Azure Databricks to deployment for use in batch and real-time inferencing scenarios
-- Deep learning model for NLP in text classification
-- Deep learning model (RNN) for forecasting against time-series data
-- Want to use PyTorch for deep learning
 
 ### Hands-on lab 
 In this lab, you will use Azure Databricks in combination with Azure Machine Learning to build, train and deploy the desired models. You will learn:
@@ -52,7 +45,6 @@ In this lab, you will use Azure Databricks in combination with Azure Machine Lea
 
 ## Azure services and related products
 -	Azure Databricks
--	Azure Data Explorer
 -	Azure Data Lake Storage Gen 2
 -	Azure Machine Learning service
 -	Azure Machine Learning Automated Machine Learning
