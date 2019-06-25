@@ -130,7 +130,7 @@ In this exercise, you will create a model that predicts battery failure from tim
    
    ![Uploading the training data](./images/05_UploadDataFile.png)
 
-7. Select **daily-battery-time-series.csv** and review the training data. Be sure to scroll to the right to observe the target column `Daily_Cycles_Used`. Toggle the switch above the following columns so the header reads `Ignored` for the first unlabeled column, `lifetime cycles used` and `battery_rated_cycles` columns.
+7. Select **daily-battery-time-series.csv** and review the training data. Be sure to scroll to the right to observe the target column `Daily_Cycles_Used`. Toggle the switch above the following columns so the header reads `Ignored` for the first unlabeled column, `number_of_trips`, `lifetime_cycles_used` and `battery_rated_cycles` columns.
    
    ![Reviewing the training data](./images/06_ReviewDataFile.png)
 
