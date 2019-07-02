@@ -140,7 +140,7 @@ The notebooks you will run depends on certain Python libraries that will need to
 
     ![The Libraries tab showing the Attache New button.](images/image3-6.png "Attach New")
 
-4. In the Library Source, select **PyPi** and in the Package text box type `azureml-sdk[automl_databricks,explain]` and select **Install**.
+4. In the Library Source, select **PyPi** and in the Package text box type `azureml-sdk[automl_databricks,explain]==1.0.43` and select **Install**.
 
     ![The Attach Library dialog showing PyPi as the source and azureml-sdk as the package.](images/image3-7.png "Attach Library")
 
