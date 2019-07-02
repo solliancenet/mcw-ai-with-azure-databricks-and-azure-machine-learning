@@ -1,7 +1,7 @@
 ![](https://github.com/Microsoft/MCW-Template-Cloud-Workshop/raw/master/Media/ms-cloud-workshop.png "Microsoft Cloud Workshops")
 
 <div class="MCWHeader1">
-AI with Databricks and Azure Machine Learning
+Machine Learning
 </div>
 
 <div class="MCWHeader2">
@@ -27,7 +27,7 @@ Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/in
 
 <!-- TOC -->
 
-- [AI with Databricks and Azure Machine Learning hands-on lab step-by-step](#ai-with-databricks-and-azure-machine-learning-hands-on-lab-step-by-step)
+- [Machine Learning hands-on lab step-by-step](#machine-learning-hands-on-lab-step-by-step)
   - [Abstract and learning objectives](#abstract-and-learning-objectives)
   - [Overview](#overview)
   - [Solution architecture](#solution-architecture)
@@ -50,7 +50,7 @@ Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/in
 
 <!-- /TOC -->
 
-# AI with Databricks and Azure Machine Learning hands-on lab step-by-step 
+# Machine Learning hands-on lab step-by-step 
 
 ## Abstract and learning objectives 
 
