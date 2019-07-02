@@ -1,4 +1,4 @@
-# AI with Databricks and Azure Machine Learning
+# Machine Learning and Deep Learning End-to-End
 
 Trey Research Inc. delivers innovative solutions for manufacturers. They specialize in identifying and solving problems for manufacturers that can run the range from automating away mundane but time-intensive processes to delivering cutting edge approaches that provide new opportunities for their manufacturing clients. 
 
@@ -55,7 +55,7 @@ In this lab, you will use Azure Databricks in combination with Azure Machine Lea
 
 ## Azure services and related products
 -	Azure Databricks
--	Azure Machine Learning service
+-	Azure Machine Learning Service SDK
 -	Azure Machine Learning Automated Machine Learning
 -	Azure Storage
 -	IoT Hub
