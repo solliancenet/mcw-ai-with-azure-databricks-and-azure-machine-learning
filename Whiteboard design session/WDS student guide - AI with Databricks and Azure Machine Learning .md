@@ -1,7 +1,7 @@
 ![](https://github.com/Microsoft/MCW-Template-Cloud-Workshop/raw/master/Media/ms-cloud-workshop.png "Microsoft Cloud Workshops")
 
 <div class="MCWHeader1">
-AI with Databricks and Azure Machine Learning 
+Machine Learning 
 </div>
 
 <div class="MCWHeader2">
@@ -27,7 +27,7 @@ Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/in
 
 <!-- TOC -->
 
-- [AI with Databricks and Azure Machine Learning whiteboard design session student guide](#ai-with-databricks-and-azure-machine-learning-whiteboard-design-session-student-guide)
+- [Machine Learning whiteboard design session student guide](#machine-learning-whiteboard-design-session-student-guide)
   - [Abstract and learning objectives](#abstract-and-learning-objectives)
   - [Step 1: Review the customer case study](#step-1-review-the-customer-case-study)
     - [Customer situation](#customer-situation)
@@ -41,7 +41,7 @@ Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/in
 
 <!-- /TOC -->
 
-#  AI with Databricks and Azure Machine Learning whiteboard design session student guide
+#  Machine Learning whiteboard design session student guide
 
 ## Abstract and learning objectives 
 
