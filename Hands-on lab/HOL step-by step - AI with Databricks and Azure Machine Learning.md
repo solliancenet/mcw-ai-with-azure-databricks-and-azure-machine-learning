@@ -185,7 +185,7 @@ Duration: 15 minutes
 
 ### Task 1: Explore the model using a notebook
 
-1. Browse to your Azure Notebooks project and open `AI with Databricks and AML \ Model Explainability`. This is the notebook you will step thru executing in this lab.
+1. Browse to your Azure Databricks Workspace and open `AI with Databricks and AML \ Model Explainability`. This is the notebook you will step thru executing in this lab.
 2. Follow the instructions within the notebook to complete the lab.
 
 
@@ -195,7 +195,7 @@ Duration: 45 minutes
 
 ### Task 1: Create the model using a notebook
 
-1. Browse to your Azure Notebooks project and open `AI with Databricks and AML \ Deep Learning with Time Series`. This is the notebook you will step thru executing in this lab.
+1. Browse to your Azure Databricks Workspace and open `AI with Databricks and AML \ Deep Learning with Time Series`. This is the notebook you will step thru executing in this lab.
 2. Follow the instructions within the notebook to complete the lab.
 
 
