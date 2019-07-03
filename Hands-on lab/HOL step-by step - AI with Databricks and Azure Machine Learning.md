@@ -126,7 +126,7 @@ In this exercise, you will create a model that predicts battery failure from tim
    
       ![Create new compute](./images/04_CreateNewCompute.png)
 
-6. Wait for the Compute to be ready and select **Next**. Now you will upload the training data. Start by downloading the data from https://databricksdemostore.blob.core.windows.net/data/connected-car/daily-battery-time-series.csv. Select **Upload** and then in the dialog that appears choose the file `daily-battery-time-series.csv` from your local disk.
+6. Wait for the Compute to be ready and select **Next**. Now you will upload the training data. Start by downloading the data from https://databricksdemostore.blob.core.windows.net/data/connected-car/daily-battery-time-series.csv. Please ensure that the extension of the downloaded file is **csv**. Select **Upload** and then in the dialog that appears choose the file `daily-battery-time-series.csv` from your local disk.
    
    ![Uploading the training data](./images/05_UploadDataFile.png)
 
