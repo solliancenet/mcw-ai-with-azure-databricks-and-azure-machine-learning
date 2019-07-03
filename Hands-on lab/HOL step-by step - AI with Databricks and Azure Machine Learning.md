@@ -54,7 +54,7 @@ Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/in
 
 ## Abstract and learning objectives 
 
-In this lab, you will use Azure Databricks in combination with Azure Machine Learning to build, train and deploy the desired models. You will learn:
+In this lab, you will use Azure Databricks in combination with Azure Machine Learning Service to build, train and deploy the desired models. You will learn:
   - How to train a forecasting model against time series data without any code by using automated machine learning.
   - How to create a recurrent neural network (RNN) model using PyTorch in Azure Databricks that can be used to forecast against time-series data.
   - How to use a trained forecast model to score data in real-time using Spark Structured Streaming within Azure Databricks.
@@ -76,7 +76,7 @@ In building this PoC, Trey Research wants to understand how they might use machi
 
 They are also interested to learn what new capabilities Azure provides that might help them to document and explain the models that are created to non-data scientists or might accelerate their time to creating production ready, performant models. 
 
-In this lab, you will use Azure Databricks in combination with Azure Machine Learning to build, train and deploy the desired models. 
+In this lab, you will use Azure Databricks in combination with Azure Machine Learning Service to build, train and deploy the desired models. 
 
 ## Solution architecture
 
@@ -169,7 +169,7 @@ In this exercise, you will create a model that predicts battery failure from tim
    
    ![The Deploy Best Model button](./images/014_DeployBestModel.png)
 
-2. You register the best model with the Azure Machine Learning model registry so that you can retrieve it later when you want to use it for scoring. Select **Register Model** link. Once the registration process has completed, the link will change to the text `Model has been registered`.
+2. You register the best model with the Azure Machine Learning Service model registry so that you can retrieve it later when you want to use it for scoring. Select **Register Model** link. Once the registration process has completed, the link will change to the text `Model has been registered`.
    
    ![Register Best Model](./images/015_RegisterModel.png)
 
