@@ -45,14 +45,14 @@ Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/in
 
 ## Abstract and learning objectives 
 
-In this whiteboard design session, you will work with a group to design a solution that combines Azure Databricks with Azure Machine Learning to build, train and deploy the machine learning and deep learning models. You will learn:
+In this whiteboard design session, you will work with a group to design a solution that combines Azure Databricks with Azure Machine Learning Service to build, train and deploy the machine learning and deep learning models. You will learn:
 - Use of automated machine learning and understanding of its capabilities 
 - Use of model explainability features
 - Model lifecycle management from training in Azure Databricks to deployment for use in batch and real-time inferencing scenarios
 - Deep learning models for NLP in text classification and forecasting against time-series data
 - To compare PyTorch and Keras for deep learning
 
-At the end of this whiteboard design session, you will be better able to design solutions leveraging the Azure Machine Learning service and Azure Databricks.
+At the end of this whiteboard design session, you will be better able to design solutions leveraging the Azure Machine Learning Service and Azure Databricks.
 
 ## Step 1: Review the customer case study 
 
@@ -131,16 +131,16 @@ Finally, they would like to be able to easily create dashboards that summarize t
 
 2.  How should we choose between Keras and PyTorch for performing deep learning?
 
-3.  We have heard Azure Machine Learning supports automated machine learning, can we use automated machine learning to create models using deep learning? Can we really expect a non-data scientist to create performant models using these tools?  
+3.  We have heard Azure Machine Learning Service supports automated machine learning, can we use automated machine learning to create models using deep learning? Can we really expect a non-data scientist to create performant models using these tools?  
 
-4.  Some of our team has worked with Azure Databricks, and they are confused by the overlap with Azure Machine Learning service. How should we be thinking about when to use which? 
+4.  Some of our team has worked with Azure Databricks, and they are confused by the overlap with Azure Machine Learning Service. How should we be thinking about when to use which? 
 
 
 
 ### Infographic for common scenarios
 
-**Azure Machine Learning taxonomy**
-![The Azure Machine Learning workspace taxonomy](images/azure-machine-learning-taxonomy.png)
+**Azure Machine Learning Service taxonomy**
+![The Azure Machine Learning Service taxonomy](images/azure-machine-learning-taxonomy.png)
 
 **Real-time analytics**
 ![Real-time Analytics with Azure Databricks](images/real-time-analytics.png)
@@ -280,6 +280,6 @@ Directions: Tables reconvene with the larger group to hear the facilitator/SME s
 |----------|:-------------:|
 | **Description** | **Links** |
 |Azure Databricks documentation |https://docs.microsoft.com/en-us/azure/azure-databricks/|
-|Azure Machine Learning documentation|https://docs.microsoft.com/en-us/azure/machine-learning/service/|
+|Azure Machine Learning Service documentation|https://docs.microsoft.com/en-us/azure/machine-learning/service/|
 |PyTorch|https://pytorch.org|
 |Keras|https://keras.io/|
