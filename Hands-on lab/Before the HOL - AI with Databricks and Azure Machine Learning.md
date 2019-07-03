@@ -166,7 +166,7 @@ The notebooks you will run depends on certain Python libraries that will need to
 
 ### Task 5: Create your Azure Machine Learning Workspace
 
-1.  In the [Azure Portal](https://portal.azure.com) (https://portal.azure.com), select **+ Create a resource**, then type `Azure Machine Learning` into the search bar. Select `Machine Learning service workspace` from the results.
+1.  In the [Azure Portal](https://portal.azure.com) (https://portal.azure.com), select **+ Create a resource**, then type `Azure Machine Learning` into the search bar. Select `Machine Learning service workspaces` from the results.
 
     ![Select create a resource, type in Azure Databricks, then select it from the results list](images/create-aml-resource.png)
 
