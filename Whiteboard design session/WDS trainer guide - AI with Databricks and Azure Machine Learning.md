@@ -171,14 +171,14 @@ When participants are doing activities, you can **look ahead to refresh your mem
 
 ## Abstract and learning objectives 
 
-In this whiteboard design session, you will work with a group to design a solution that combines Azure Databricks with Azure Machine Learning to build, train and deploy the machine learning and deep learning models. You will learn:
+In this whiteboard design session, you will work with a group to design a solution that combines Azure Databricks with Azure Machine Learning Service to build, train and deploy the machine learning and deep learning models. You will learn:
 - Use of automated machine learning and understanding of its capabilities 
 - Use of model explainability features
 - Model lifecycle management from training in Azure Databricks to deployment for use in batch and real-time inferencing scenarios
 - Deep learning models for NLP in text classification and forecasting against time-series data
 - To compare PyTorch and Keras for deep learning
 
-At the end of this whiteboard design session, you will be better able to design solutions leveraging the Azure Machine Learning service and Azure Databricks.
+At the end of this whiteboard design session, you will be better able to design solutions leveraging the Azure Machine Learning Service and Azure Databricks.
 
 ## Step 1: Review the customer case study 
 
@@ -257,16 +257,16 @@ Finally, they would like to be able to easily create dashboards that summarize t
 
 2.  How should we choose between Keras and PyTorch for performing deep learning?
 
-3.  We have heard Azure Machine Learning supports automated machine learning, can we use automated machine learning to create models using deep learning? Can we really expect a non-data scientist to create performant models using these tools?  
+3.  We have heard Azure Machine Learning Service supports automated machine learning, can we use automated machine learning to create models using deep learning? Can we really expect a non-data scientist to create performant models using these tools?  
 
-4.  Some of our team has worked with Azure Databricks, and they are confused by the overlap with Azure Machine Learning service. How should we be thinking about when to use which? 
+4.  Some of our team has worked with Azure Databricks, and they are confused by the overlap with Azure Machine Learning Service. How should we be thinking about when to use which? 
 
 
 
 ### Infographic for common scenarios
 
-**Azure Machine Learning taxonomy**
-![The Azure Machine Learning workspace taxonomy](images/azure-machine-learning-taxonomy.png)
+**Azure Machine Learning Service taxonomy**
+![The Azure Machine Learning Service taxonomy](images/azure-machine-learning-taxonomy.png)
 
 **Real-time analytics**
 ![Real-time Analytics with Azure Databricks](images/real-time-analytics.png)
@@ -406,7 +406,7 @@ Directions: Tables reconvene with the larger group to hear the facilitator/SME s
 |----------|:-------------:|
 | **Description** | **Links** |
 |Azure Databricks documentation |https://docs.microsoft.com/en-us/azure/azure-databricks/|
-|Azure Machine Learning documentation|https://docs.microsoft.com/en-us/azure/machine-learning/service/|
+|Azure Machine Learning Service documentation|https://docs.microsoft.com/en-us/azure/machine-learning/service/|
 |PyTorch|https://pytorch.org|
 |Keras|https://keras.io/|
 
@@ -468,9 +468,9 @@ The high level architecture of the solution is illustrated in the following diag
 
 ![Compliance and battery alerting AI solution diagram as described in the text that follows](images/preferred-solution-overview.png)
 
-In the solution the component text data is retrieved from the existing Azure SQL Database store. The labeled data provided is used within Azure Databricks to train a model that can classify the components as compliant or non-compliant. During model training, the model logs and performance metrics are collected by Azure Machine Learning into the Workspace. The model that is created is also registered there so that it can be easily retrieved and used for later evaluation or scoring. Trey can score the component descriptions in batch using Azure Databricks, where by their notebook code retrieves the trained compliance model from the Azure Machine Learning Workspace. During this process they can evaluate vehicle by vehicle and issue an alert if any vehicle has been detected with out of compliance components. An alert is issued by inserting a new document into an a Cosmos DB collection. An Azure Function monitors the Cosmos DB change feed and creates a new cloud to device message to send to the vehicle via IoT Hub. Service facilities, who would not receive these pushed alerts, would be able to lookup the the alerts by querying from Cosmos DB. 
+In the solution the component text data is retrieved from the existing Azure SQL Database store. The labeled data provided is used within Azure Databricks to train a model that can classify the components as compliant or non-compliant. During model training, the model logs and performance metrics are collected by Azure Machine Learning Service into the Workspace. The model that is created is also registered there so that it can be easily retrieved and used for later evaluation or scoring. Trey can score the component descriptions in batch using Azure Databricks, where by their notebook code retrieves the trained compliance model from the Azure Machine Learning Workspace. During this process they can evaluate vehicle by vehicle and issue an alert if any vehicle has been detected with out of compliance components. An alert is issued by inserting a new document into an a Cosmos DB collection. An Azure Function monitors the Cosmos DB change feed and creates a new cloud to device message to send to the vehicle via IoT Hub. Service facilities, who would not receive these pushed alerts, would be able to lookup the the alerts by querying from Cosmos DB. 
 
-The process for the battery failure alerting works similarly. Trey would start by storing the historical data already have in Azure Storage blobs. This historical data would be used to train the model in Azure Databricks and register it with Azure Machine Learning. With trained model in hand, Trey could load create a notebook in Azure Databricks that uses Spark Structured Streaming to apply the model, make its forecasts and issue any alerts by writing documents to Cosmos DB for batteries forecasted to fail within 30 days. The data scored in this case would be the daily trip telemetry received from the vehicle, ingested into IoT Hub and directly read from by the Structured Streaming query. Additionally, Trey would want to archive all of the telemetry received via IoT Hub to Azure Storage blobs for the purposes of collecting historical data they can later use to improve their models and create new ones. The issued alerts would be queried or sent in the same way as described for component compliance alerts. 
+The process for the battery failure alerting works similarly. Trey would start by storing the historical data already have in Azure Storage blobs. This historical data would be used to train the model in Azure Databricks and register it with Azure Machine Learning Service. With trained model in hand, Trey could load create a notebook in Azure Databricks that uses Spark Structured Streaming to apply the model, make its forecasts and issue any alerts by writing documents to Cosmos DB for batteries forecasted to fail within 30 days. The data scored in this case would be the daily trip telemetry received from the vehicle, ingested into IoT Hub and directly read from by the Structured Streaming query. Additionally, Trey would want to archive all of the telemetry received via IoT Hub to Azure Storage blobs for the purposes of collecting historical data they can later use to improve their models and create new ones. The issued alerts would be queried or sent in the same way as described for component compliance alerts. 
 
 _Classifying component descriptions text data_
 
@@ -518,53 +518,53 @@ _Automated machine learning_
 
 1.  For which scenario could Trey apply automated machine learning? Why? 
 
-While automated machine learning could be applied to both scenarios, the significant additional data preparation required for text classification means that automated machine learning could not be applied outright. However, for the the time-series battery lifecycle data they could directly use the automated machine learning capabilities of Azure Machine Learning to create a forecast model. 
+While automated machine learning could be applied to both scenarios, the significant additional data preparation required for text classification means that automated machine learning could not be applied outright. However, for the the time-series battery lifecycle data they could directly use the automated machine learning capabilities of Azure Machine Learning Service to create a forecast model. 
 
 2.  How could they use automated machine learning with Azure Databricks?
 
 Trey has two options for leveraging automated machine learning: 
 - They could train the model with the user experience that is available from the Azure Machine Learning workspace in the Azure Portal, and then register the trained model with the workspace.
-- They could train the model using automated machine learning via the Azure Machine Learning Python SDK within a Databricks notebooks, and then register the model that results.
-With the registered model available, any notebooks they would build that use the model for scoring would retrieve the model from the Azure Machine Learning registry using the Azure Machine Learning Python SDK.
+- They could train the model using automated machine learning via the Azure Machine Learning Service Python SDK within a Databricks notebooks, and then register the model that results.
+With the registered model available, any notebooks they would build that use the model for scoring would retrieve the model from the Azure Machine Learning Service registry using the Azure Machine Learning Service Python SDK.
 
 _Model Management_
 
 1.  For both models, how should Trey track the performance of each of their training runs?
 
-Within their notebooks that perform model training, Trey should be using the Azure Machine Learning Python SDK to create an experiment for session. Within this experiment they can create a run each time they train the model and capture logs, the training time taken and any performance metrics that result from the model evaluation. 
+Within their notebooks that perform model training, Trey should be using the Azure Machine Learning Service Python SDK to create an experiment for session. Within this experiment they can create a run each time they train the model and capture logs, the training time taken and any performance metrics that result from the model evaluation. 
 
 2.  Can they quickly view this experiment data somewhere? Are there programmatic options to querying this data?
 
-Once the data is for an experiment is collected in the Azure Machine Learning workspace, Trey can view it from the Experiments tab of the Azure Portal. From here they can drill into each run and explore the run details. Using the Azure Machine Learning Python SDK from a notebook, Trey can retrieve all of the experiments and run details and evaluate them programmatically (for example to pick the best run according to some custom logic).
+Once the data is for an experiment is collected in the Azure Machine Learning workspace, Trey can view it from the Experiments tab of the Azure Portal. From here they can drill into each run and explore the run details. Using the Azure Machine Learning Service Python SDK from a notebook, Trey can retrieve all of the experiments and run details and evaluate them programmatically (for example to pick the best run according to some custom logic).
 
 3.  How would they manage versioning of each the models they have created and associate these models with the results of evaluating their performance?
 
-When they complete a training run for a model they would like to keep, Trey can use the Azure Machine Learning Python SDK to register the model in its registry. Each time they register a model with the same name, Azure Machine Learning will automatically version the model and add the new model to the version history. They can register models using the run, and by doing so will automatically associate the model with run and the performance metrics it contains.
+When they complete a training run for a model they would like to keep, Trey can use the Azure Machine Learning Service Python SDK to register the model in its registry. Each time they register a model with the same name, Azure Machine Learning Service will automatically version the model and add the new model to the version history. They can register models using the run, and by doing so will automatically associate the model with run and the performance metrics it contains.
 
 4.  In your solution, how will Trey retrieve previous versions of models and use them for further evaluation or scoring?
 
-They can retrieve previous versions of a model by going to the Azure Machine Learning workspace, Models tab in the Azure Portal or by requesting the model from a notebook using the Azure Machine Learning Python SDK.
+They can retrieve previous versions of a model by going to the Azure Machine Learning workspace, Models tab in the Azure Portal or by requesting the model from a notebook using the Azure Machine Learning Service Python SDK.
 
 
 _Model Explainability & Reproducibility_
 
 1.  How would you suggest Trey programmatically create explanations of their models? What is the process? Explain how it works to improve the interpretability of the model generally as well as for the results of specific predictions.
 
-The Azure Machine Learning SDK includes interpretability features that accept a trained model along with training or test data and can return insights on why the model is making its decisions by providing analysis like which features have the greatest impact on the model's predictions. 
+The Azure Machine Learning Service Python SDK includes interpretability features that accept a trained model along with training or test data and can return insights on why the model is making its decisions by providing analysis like which features have the greatest impact on the model's predictions. 
 
 This approach can be performed globally (against the entire data set provided) or against a single sample from the data set. The former enables Trey to understand generally what is influencing the models predictions while the latter enables Trey to explain what influenced a particular prediction. The SDK also provides visualizations of the explanations that result that can be use within a notebook. 
 
 2.  Is the approach you suggest limited to working against machine learning models only (e.g., it does not work against deep learning models)?
 
-The approach taken under the covers by Azure Machine Learning Python SDK is effectively black box testing of a model- it takes an input sample, uses the model to make the prediction and evaluates the outcome using a variety of techniques (called explainers). As such it is agnostic to whether the model is machine learning based or deep learning based.
+The approach taken under the covers by Azure Machine Learning Service Python SDK is effectively black box testing of a model- it takes an input sample, uses the model to make the prediction and evaluates the outcome using a variety of techniques (called explainers). As such it is agnostic to whether the model is machine learning based or deep learning based.
 
 3.  Does your approach support explaining models created with automated machine learning?
 
-Yes, in fact the Azure Machine Learning Python SDK provides additional functionality specifically for enabling model interpretability on models created using Azure Machine Learning automated machine learning.
+Yes, in fact the Azure Machine Learning Service Python SDK provides additional functionality specifically for enabling model interpretability on models created using Azure Machine Learning Service automated machine learning.
 
 4.  How do machine learning pipelines help improve the reproducibility of model training and scoring? How could your solution leverage pipelines?
 
-Machine learning pipelines encapsulate the steps taken to from input training data, to trained model, as well as to go from input data to scored result. Pipelines package these steps into reusable objects. The Azure Machine Learning service and the SDK support the creation, registration and execution of pipelines. The use of pipeline does increase the reproducibility of being able to re-create a model or re-execute an inference in a way that helps to guarantee fidelity across all executions. Trey could author Azure Machine Learning pipelines in notebooks using the Azure Machine Learning Python SDK.
+Machine learning pipelines encapsulate the steps taken to from input training data, to trained model, as well as to go from input data to scored result. Pipelines package these steps into reusable objects. The Azure Machine Learning Service and the SDK support the creation, registration and execution of pipelines. The use of pipeline does increase the reproducibility of being able to re-create a model or re-execute an inference in a way that helps to guarantee fidelity across all executions. Trey could author Azure Machine Learning Service pipelines in notebooks using the Azure Machine Learning Service Python SDK.
 
 _Enabling visualization_
 
@@ -590,17 +590,17 @@ For Trey's two scenarios, they could actually use either approach. They would li
 
 This is the subject of much discussion in the community, however the guidance for selecting between Keras and PyTorch boils down to: Keras may be easier to start with and easier to build production grade models, while PyTorch has a steeper initial learning, as it is lower level than Keras, but it offers greater flexibility, faster inferencing and improved debuggability in the balance. For a comprehensive comparison, see https://deepsense.ai/keras-or-pytorch/.
 
-3.  We have heard Azure Machine Learning supports automated machine learning, can we use automated machine learning to create models using deep learning? Can we really expect a non-data scientist to create performant models using these tools? 
+3.  We have heard Azure Machine Learning Service supports automated machine learning, can we use automated machine learning to create models using deep learning? Can we really expect a non-data scientist to create performant models using these tools? 
 
 Automated machine learning currently only support machine learning algorithms and not deep learning approaches.
 
-Automated machine learning in Azure Machine Learning helps to simplify and expedite the process of producing a performant model. It does this by trying many combinations of best practice data preparation (automated pre-processing and featurization), algorithm selection and algorithm parameters (hyper-parameter tuning) while asking the user only for some relatively simple configuration information (such as the type of prediction problem, the input training data set, the feature to predict and the compute resources on which to experiment) to perform the job. 
+Automated machine learning in Azure Machine Learning Service helps to simplify and expedite the process of producing a performant model. It does this by trying many combinations of best practice data preparation (automated pre-processing and featurization), algorithm selection and algorithm parameters (hyper-parameter tuning) while asking the user only for some relatively simple configuration information (such as the type of prediction problem, the input training data set, the feature to predict and the compute resources on which to experiment) to perform the job. 
 
-Azure Machine Learning provides access to the automated machine learning capabilities via a Python SDK and via visual interface in the Azure Portal. The latter user experience can simplify the setup enough such that a non-data scientist who has an understanding of the fundamentals of training a model can use it to create a model.
+Azure Machine Learning Service provides access to the automated machine learning capabilities via a Python SDK and via visual interface in the Azure Portal. The latter user experience can simplify the setup enough such that a non-data scientist who has an understanding of the fundamentals of training a model can use it to create a model.
 
-4.  Some of our team has worked with Azure Databricks, and they are confused by the overlap with Azure Machine Learning service. How should we be thinking about when to use which? 
+4.  Some of our team has worked with Azure Databricks, and they are confused by the overlap with Azure Machine Learning Service. How should we be thinking about when to use which? 
 
-Consider using both. The best way to think about the relationship between Azure Databricks and Azure Machine Learning is that Azure Databricks provides the tools for data engineers and data scientists to author their data and machine learning pipelines as well as the compute that powers these, and Azure Machine Learning provides the platform that formalizes the modeling process by capturing data about training runs, versioning pipelines and models and assisting with the deployment of models as web services.
+Consider using both. The best way to think about the relationship between Azure Databricks and Azure Machine Learning Service is that Azure Databricks provides the tools for data engineers and data scientists to author their data and machine learning pipelines as well as the compute that powers these, and Azure Machine Learning Service provides the platform that formalizes the modeling process by capturing data about training runs, versioning pipelines and models and assisting with the deployment of models as web services.
  
 
 ## Customer quote (to be read back to the attendees at the end)
