@@ -281,5 +281,6 @@ Directions: Tables reconvene with the larger group to hear the facilitator/SME s
 | **Description** | **Links** |
 |Azure Databricks documentation |https://docs.microsoft.com/en-us/azure/azure-databricks/|
 |Azure Machine Learning service documentation|https://docs.microsoft.com/en-us/azure/machine-learning/service/|
+|Microsoft Learn - Data Scientist|https://docs.microsoft.com/en-us/learn/browse/?roles=data-scientist|
 |PyTorch|https://pytorch.org|
 |Keras|https://keras.io/|
