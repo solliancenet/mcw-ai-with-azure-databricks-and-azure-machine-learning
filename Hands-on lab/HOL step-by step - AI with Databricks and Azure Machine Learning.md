@@ -187,6 +187,7 @@ Duration: 15 minutes
 
 1. Browse to your Azure Databricks Workspace and open `AI with Databricks and AML \ Model Explainability`. This is the notebook you will step thru executing in this lab.
 2. Follow the instructions within the notebook to complete the lab.
+3. Note that in this notebook, and the following notebooks, we are using the default storage account in Azure Databricks. However, the best practice in enterprises is to use a shared storage account that you mount to your Azure Databricks. Also, you can use [Secrets in Azure Key Vaults](https://docs.azuredatabricks.net/user-guide/secrets/secrets.html) that can be read by the notebooks to save sensitive data, such as your subscription ID.
 
 
 ## Exercise 3: Creating a deep learning model (RNN) for time series data and registering the model
